@@ -15,7 +15,7 @@ class AdminController extends Controller
                 return view('frontend.pages.home');
             }
             else if($usertype === 'admin'){
-                return view('admin.dashboard');
+                return view('admin.app');
             }else{
                 return redirect()->back();
             }

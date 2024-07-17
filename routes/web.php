@@ -22,3 +22,7 @@ Route::get('/gallery',[GalleryController::class,'gallery']);
 Route::get('/service',[ServiceController::class,'service']);
 Route::get('/contact',[ContactController::class,'contact']);
 Route::post('/contact/store',[ContactController::class,'contactRequest'])->name('contact.store');
+
+
+Route::get('/create/room',[RoomController::class,'create_room'])->name('create.room');
+Route::post('/upload/room',[RoomController::class,'upload_room'])->name('upload.room');
